@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 반응형웹 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>main</title>
+<link rel="stylesheet" href="../resources/css/common/header.css">
+<link rel="stylesheet" href="../resources/css/common/footer.css">
+<link rel="stylesheet" href="../resources/css/admin/ad_productList.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+	crossorigin="anonymous">
+<script src="../resources/js/customer/main.js" defer></script>
+</head>
+<body>
+	<div class="wrap">
+		<!-- header 시작 -->
+		<nav class="navbar">
+			<div></div>
+			<div></div>
+			<ul class="navbar_title">
+				<li><a href="../common/main.html"><i
+						class="fa-solid fa-signature"></i></a></li>
+			</ul>
+			<ul class="navbar_menu">
+				<li>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2 bs-body-bg" type="search"
+							placeholder="Search" aria-label="Search" size="50px">
+						<button class="btn btn-outline-secondar" type="submit">Search</button>
+					</form>
+				</li>
+				<li></li>
+				<li></li>
+				<li><a href="../admin/ad_notice.html">공지사항</a></li>
+				<li><a href="../customer/product/shopAll.html">제품소개</a></li>
+				<!-- <li><a href="../customer/board/boardList.html">Q&A</a></li> -->
+				<li><a href="../customer/cart/cart.html">찜목록</a></li>
+				<li><a href="../customer/join/join.html">회원가입</a></li>
+				<li><a href="../customer/login/login.html">로그인</a></li>
+				<li><a href="../customer/mypage/mypage.html"><i
+						class="fa-solid fa-user"></i></a></li>
+			</ul>
+			<a href="#" class="navbar-toggleBtn"> <i class="fa-solid fa-bars"></i>
+			</a>
+			<div></div>
+			<div></div>
+		</nav>
+		<nav class="navbar2">
+			<ul class="navbar_menu2">
+				<li><a href="../customer/product/shopAll.html">디자인</a></li>
+				<li><a href="../customer/product/shopAll.html">IT</a></li>
+				<li><a href="../customer/product/shopAll.html">영상</a></li>
+				<li><a href="../customer/product/shopAll.html">마케팅</a></li>
+				<li><a href="../customer/product/shopAll.html">번역</a></li>
+				<li><a href="../customer/product/shopAll.html">문서</a></li>
+				<li><a href="../customer/product/shopAll.html">창업</a></li>
+				<li><a href="../customer/product/shopAll.html">주문제작</a></li>
+				<li><a href="../customer/product/shopAll.html">세무</a></li>
+			</ul>
+		</nav>
+		<!-- header 끝 -->
+
+		<!-- contents 시작 -->
+
+		<div id="container">
+			<div id="contents">
+				<!-- 상단 중앙 1시작 -->
+				<div id="section1">
+					<h1 align="center">관리자 상품목록</h1>
+				</div>
+
+				<!-- 상단 중앙 2시작 -->
+				<div id="section2">
+					<!-- 좌측메뉴 시작 -->
+					<div id="left">
+						<div class="left_inside">
+							<!-- 좌측메뉴바 시작 -->
+							<ul class="left_menubar">
+								<li><h4>관리자 메뉴</h4></li>
+								<hr>
+								<li>
+									<h5 align="right">상품관리</h5>
+									<ul class="product_menu">
+										<li align="right"><a href="ad_productList.html">상품목록</a></li>
+										<li align="right"><a href="ad_productAdd.html">상품등록</a></li>
+										<li align="right"><a href="ad_productCategori.html">카테고리</a></li>
+									</ul>
+								</li>
+								<li>
+									<h5 align="right">주문관리</h5>
+									<ul class="product_menu">
+										<li align="right"><a href="ad_orderList.html">주문목록</a></li>
+										<li align="right"><a href="ad_orderConfirm.html">주문승인</a></li>
+										<li align="right"><a href="ad_refundReq.html">환불요청</a></li>
+										<li align="right"><a href="ad_refundComplete.html">환불완료</a></li>
+										<li align="right"><a href="ad_refundCancle.html">환불취소</a></li>
+									</ul>
+								</li>
+								<li><h5 align="right">
+										<a href="customerInfo.html">회원정보</a>
+									</h5></li>
+								<li><h5 align="right">
+										<a href="board.html">게시판</a>
+									</h5></li>
+								<li><h5 align="right">
+										<a href="total_income.html">결산</a>
+									</h5></li>
+								<li><h5 align="right">
+										<a href="logout.html">로그아웃</a>
+									</h5></li>
+							</ul>
+							<!-- 좌측메뉴바 종료 -->
+							<!-- 우측 내용 시작 -->
+
+						</div>
+					</div>
+					<!-- 좌측메뉴 종료 -->
+
+					<!-- 우측 내용 시작 -->
+					<div id="right">
+						<div class="table_div">
+							<div class="row" style="-bs-gutter-x: 0;">
+								<div class="col-md-1"
+									style="text-align: right; line-height: 150px; font-size: 20px;">
+									1&nbsp;&nbsp;</div>
+								<div class="col-md-11">
+									<div class="card mb-3" style="max-width: 800px;
+									">
+										<div class="row" style="--bs-gutter-x: 0;">
+											<div class="col-md-3">
+												<img
+													src="https://d2v80xjmx68n4w.cloudfront.net/gigs/vaJm21682411147.jpg"
+													class="img-fluid rounded-start" alt="...">
+											</div>
+											<div class="col-md-8">
+												<div class="card-body">
+													<h5 class="card-title" style="font-weight: bold;">글로벌 Top10 로펌 출신 변호사의 저작권 상담</h5>
+													<p class="card-text">기본 상담+내용증명 작성 기본 상담 진행 후에 내용증명을
+														작성하여 변호사(법률사무소)명의로 발송 진행</p>
+													<p class="card-text">
+														<small class="text-body-secondary">작업일 2일</small>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row" style="-bs-gutter-x: 0;">
+								<div class="col-md-1"
+									style="text-align: right; line-height: 150px; font-size: 20px;">
+									2&nbsp;&nbsp;</div>
+								<div class="col-md-11">
+									<div class="card mb-3" style="max-width: 800px;">
+										<div class="row" style="--bs-gutter-x: 0;">
+											<div class="col-md-3">
+												<img
+													src="https://d2v80xjmx68n4w.cloudfront.net/gigs/9Q1Gf1690335090.jpg"
+													class="img-fluid rounded-start" alt="...">
+											</div>
+											<div class="col-md-8">
+												<div class="card-body">
+													<h5 class="card-title" style="font-weight: bold;">심플한 디자인의 수익형 워드프레스 블로그 제작</h5>
+													<p class="card-text">워드프레스 블로그 제작 - 깔끔한 반응형 디자인 - 손쉬운
+														애드센스 광고 관리 - SEO 최적화 - 홈페이지 속도 최적화</p>
+													<p class="card-text">
+														<small class="text-body-secondary">작업일 7일</small>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row" style="-bs-gutter-x: 0;">
+								<div class="col-md-1"
+									style="text-align: right; line-height: 150px; font-size: 20px;">
+									3&nbsp;&nbsp;</div>
+								<div class="col-md-11">
+									<div class="card mb-3" style="max-width: 800px;">
+										<div class="row" style="--bs-gutter-x: 0;">
+											<div class="col-md-3">
+												<img
+													src="https://d2v80xjmx68n4w.cloudfront.net/gigs/Nxz3D1689137084.jpg"
+													class="img-fluid rounded-start" alt="...">
+											</div>
+											<div class="col-md-8">
+												<div class="card-body">
+													<h5 class="card-title" style="font-weight: bold;">인스타유령이 많아서 발끈한 명문대생이 관리해 드립니다.</h5>
+													<p class="card-text">인스타그램 관리대행 30일 계정활성화를 위한 계정관리 30일.
+														해씨태그 분석하여 제공</p>
+													<p class="card-text">
+														<small class="text-body-secondary">작업일 20일</small>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row" style="-bs-gutter-x: 0;">
+								<div class="col-md-1"
+									style="text-align: right; line-height: 150px; font-size: 20px;">
+									4&nbsp;&nbsp;</div>
+								<div class="col-md-11">
+									<div class="card mb-3" style="max-width: 800px;">
+										<div class="row" style="--bs-gutter-x: 0;">
+											<div class="col-md-3">
+												<img
+													src="https://d2v80xjmx68n4w.cloudfront.net/gigs/nkG4O1689234233.jpg"
+													class="img-fluid rounded-start" alt="...">
+											</div>
+											<div class="col-md-8">
+												<div class="card-body">
+													<h5 class="card-title" style="font-weight: bold;">백링크"크몽어워즈"SEO 연속성 백링크를 드립니다.</h5>
+													<p class="card-text">기사 구조 백링크 기사 구조 백링크가 매 주 한 차례 4주에
+														거쳐 제공됩니다</p>
+													<p class="card-text">
+														<small class="text-body-secondary">작업일 15일</small>
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<!-- 우측내용 종료 -->
+				</div>
+			</div>
+		</div>
+		<!-- contents 끝 -->
+
+		<!-- footer 시작 -->
+		<div class="footer_info">
+			<div class="footer_link">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보</a></li>
+				</ul>
+			</div>
+			<div class="footer_info_customer">
+				<h4>고객센터 010-1111-2222</h4>
+				<p>평일 및 주말 10:00 ~ 17:00(공휴일 휴무)</p>
+			</div>
+			<div class="footer_info_company">
+				<span>법인명:ICTCorp </span> <span>대표:Lee YeanWoo </span> <span>사업자번호:123-1234
+				</span> <span>소재지:서울시 마포구</span>
+			</div>
+		</div>
+		<!-- footer 끝 -->
+	</div>
+</body>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+	crossorigin="anonymous"></script>
+</html>

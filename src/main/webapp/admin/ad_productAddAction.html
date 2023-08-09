@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- 반응형웹 -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>관리자 - 상품등록</title>
+<link rel="stylesheet" href="../resources/css/common/header.css">
+<link rel="stylesheet" href="../resources/css/common/footer.css">
+<link rel="stylesheet" href="../resources/css/admin/ad_productAdd.css">
+<!-- html읽어오는 동안의 공백을 방지 -->
+<script src="../resources/js/customer/main.js" defer></script>
+</head>
+<body>
+	<div class="wrap">
+		<!-- header 시작 -->
+		<nav class="navbar">
+			<ul class="navbar_title">
+				<li><i class="fa-solid fa-signature"></i></li>
+			</ul>
+			<ul class="navbar_menu">
+				<li><a href="../common/main.html">HOME</a></li>
+				<li><a href="../customer/product/shopAll.html">제품소개</a></li>
+				<li><a href="../customer/board/boardList.html">Q&A</a></li>
+			</ul>			
+			<ul class="navbar_icons">
+				<li><a href="https://twitter.com/?lang=ko"><i class="fa-brands fa-twitter"></i></a></li>
+				<li><a href="https://ko-kr.facebook.com/"><i class="fa-brands fa-square-facebook"></i></a></li>
+				<li><a href="../customer/cart/cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+				<li><a href="../customer/join/join.html"><i class="fa-solid fa-handshake"></i></a></li>
+				<li><a href="../customer/login/login.html">로그인</a></li>
+				<li><a href="../customer/mypage/mypage.html"><i class="fa-solid fa-user"></i></a></li>
+			</ul>
+			<a href="#" class="navbar-toggleBtn">
+				<i class="fa-solid fa-bars"></i>
+			</a>
+		</nav>
+		<!-- header 끝 -->
+		
+		<!-- contents 시작 -->
+		<div id="container">
+			<div id="contents">
+				<!-- 상단 중앙 1시작 -->
+				<div id="section1">
+					<h1 align="center">관리자 상품등록</h1>
+				</div>
+				
+				<!-- 상단 중앙 2시작 -->
+				<div id="section2">
+					<!-- 좌측메뉴 시작 -->
+					<div id="left">
+						<div class="left_inside">
+							<!-- 좌측메뉴바 시작 -->
+							<ul class="left_menubar">
+								<li><h3>관리자 메뉴</h3></li>
+								<hr>
+								<li>
+									<h4>상품관리</h4>
+									<ul class="product_menu">
+										<li><a href="ad_productList.html">상품목록</a></li>
+										<li><a href="ad_productAdd.html">상품등록</a></li>
+										<li><a href="ad_productCategori.html">카테고리</a></li>
+									</ul>
+								</li>
+								<li>
+									<h4>주문관리</h4>
+									<ul class="product_menu">
+										<li><a href="ad_orderList.html">주문목록</a></li>
+										<li><a href="ad_orderConfirm.html">주문승인</a></li>
+										<li><a href="ad_refundReq.html">환불요청</a></li>
+										<li><a href="ad_refundComplete.html">황불완료</a></li>
+										<li><a href="ad_refundCancle.html">황불취소</a></li>
+									</ul>
+								</li>
+								<li><h4><a href="customerInfo.html">회원정보</a></h4></li>
+								<li><h4><a href="board.html">게시판</a></h4></li>
+								<li><h4><a href="total_income.html">결산</a></h4></li>
+								<li><h4><a href="logout.html">로그아웃</a></h4></li>
+							</ul>
+							<!-- 좌측메뉴바 종료 -->
+							<!-- 우측 내용 시작 -->
+							
+						</div>
+					</div>
+					<!-- 좌측메뉴 종료 -->
+					
+					<!-- 우측 내용 시작 -->
+					<div id="right">
+						<div class="table_div">
+							<form action="ad_productAddAction.html" name="ad_productAdd" method="post">
+								<table>
+									<script type="text/javascript">
+										alert("상품등록 성공!!");
+										window.location='ad_productList.html';
+									</script>
+								</table>
+							</form>
+						</div>
+					</div>
+					<!-- 우측내용 종료 -->
+				</div>
+			</div>
+		</div>
+		<!-- contents 끝 -->
+		
+		<!-- footer 시작 -->
+		<div class="footer_info">
+			<div class="footer_link">
+				<ul>
+					<li><a href="#">회사소개</a></li>			
+					<li><a href="#">이용약관</a></li>			
+					<li><a href="#">개인정보</a></li>			
+				</ul>
+			</div>
+			<div class="footer_info_customer">
+				<h3>고객센터 010-1111-2222</h3>
+				<p>평일 및 주말 10:00 ~ 17:00(공휴일 휴무)</p>
+			</div>
+			<div class="footer_info_company">
+				<span>법인명:ICTCorp </span>
+				<span>대표:Lee YeanWoo </span>
+				<span>사업자번호:123-1234 </span>
+				<span>소재지:서울시 마포구</span>
+			</div>
+		</div>
+		<!-- footer 끝 -->
+	</div>
+</body>
+</html>

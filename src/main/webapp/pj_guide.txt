@@ -1,0 +1,40 @@
+customer - 고객
+admin  - 관리자
+common - 공통
+------------------------------------------
+resources - css, images, js, upload
+resources/css - common > header.css | footer.css | main.css 
+          js - 
+------------------------------------------
+common > header.html(jsp할 때 include 대상)
+       footer.html(jsp할 때 include 대상)
+       main.html => 작업
+------------------------------------------   
+admin > ad_product > ad_productAdd.html  - 관리자 > 상품등록    
+                     ad_productAddAction.html  - 관리자 > 상품등록 처리
+                     ad_productList.html  - 관리자 > 상품목록
+------------------------------------------   
+customer > board > boardList.html - 게시판(수업x)
+           join > join.html - 회원가입
+                  joinAction.html - 회원가입 처리
+           login > login.html - 로그인     
+                  loginAction.html - 로그인 처리
+           mypage > cart > cartList.html - 장바구니 목록(수업x)
+                    order > custOrderList.html - 고객 주문목록(수업x)
+           product > shopAll.html(수업x)
+           
+           
+***************************************************           
+1. common > main.html => 작업           
+   header.css, footer.css,  main.css
+   
+2. 템플릿 => header.css, footer.css가 추가된 페이지 제작
+           타 페이지 작성시 템플릿 이용 
+   
+2. join
+
+3. login
+
+4. admin > ad_product
+
+                     
